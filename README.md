@@ -35,6 +35,14 @@ This repository contains code for training and evaluating multiple instance lear
    pip install -e .
    ```
 
+## Data Preparation: [dataprepare.md](dataprepare.md)
+
+Before training models, you'll need to obtain and preprocess the raw acoustic data. Please refer to [dataprepare.md](dataprepare.md) for detailed instructions on:
+
+- Obtaining the dataset from the Australian Antarctic Data Center
+- Setting up S3 credentials and downloading the data
+- Preprocessing the raw audio into "bags" for training
+
 ## Usage
 
 ### 1. Data Preprocessing
