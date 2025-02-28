@@ -1,0 +1,29 @@
+paths:
+  data_root: './data/input'
+  results_dir: './results'
+  checkpoint_dir: './checkpoints'
+  log_dir: './logs'
+
+training:
+  batch_size: 64
+  num_epochs: 100
+  learning_rate: 1e-4
+  weight_decay: 0.01
+  patience: 15
+  seed: 42
+  device: 'cuda'
+  max_grad_norm: 1.0
+  label_smoothing: 0.1
+  focal_gamma: 2.0
+  warmup_epochs: 5
+
+model:
+  feature_dim: 512
+  num_heads: 4
+
+logging:
+  log_every: 10
+
+wandb:
+  enabled: false
+  project: 'whale-mil'
